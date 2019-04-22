@@ -7,64 +7,71 @@
     font-family: "rBold";
     src:url("font/Rajdhani-Bold.ttf") format("truetype");
 }
-.tabordion {
-  color: #333;
-  display: block;
-  font-family: rNormal;
-  margin: auto;
-  position: relative;
-  width: 80%;
-  margin-top: 5%;
-}
 
-.tabordion input[name="sections"] {
-  left: -9999px;
-  position: absolute;
-  top: -9999px;
-}
 
-.tabordion section {
-  display: block;
-}
 
-.tabordion section label {
-  cursor: pointer;
-  display: block;
-  font-size: 1.2em;
-  font-family: rBold;
+.accordion {
+  background-color: #eee;
   color: #566573;
-  padding: 15px 20px;
-  position: relative;
-  width: 180px;
-  z-index:100;
+  font-family: rBold;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  left: 5%;
+  right: 5%;
 }
 
-.tabordion section article {
-  display: none;
-  left: 230px;
-  min-width: 300px;
-  padding: 0 0 0 21px;
-  position: absolute;  
-  top: 0;
+.active, .accordion:hover {
+  background-color: #ABB2B9;
 }
 
-.tabordion section article:after {
-  bottom: 0;
-  content: "";
-  display: block;
-  left:-229px;
-  position: absolute;
-  top: 0;
-  width: 220px;
-  z-index:1;
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
-.tabordion input[name="sections"]:checked + label { 
-  border-left-color: #8a7196;
-    border-left-style: solid;
+.active:after {
+  content: "\2212";
 }
 
-.tabordion input[name="sections"]:checked ~ article {
-  display: block;
+.panel {
+  padding: 0px 18px; 
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+  margin-left: 10%
 }
 
+.panel p{
+   
+  font-size: 23px;
+  color: #566573;
+  margin-left: 20%;
+}
+
+.panel h1{
+  font-family: rNormal;
+font-size: 25px;
+color: #566573;
+}
+
+.panel h2{
+  font-family: rBold;
+  font-size: 20px;
+  color: #566573;
+}
+
+.panel img{
+  padding-top: 10px;
+  padding-bottom: 10px
+  
+ }

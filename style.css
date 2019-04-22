@@ -146,6 +146,7 @@ body {
     color: #8a7196;
 }
 
+
 /*Probando con grid*/
 .wrapper{
     display: grid;
@@ -197,7 +198,9 @@ body {
 .boxmenu{
     display: none;
 }
-
+.boxlista{
+    text-align: center;
+}
 /*img perfil */
 .imgredonda{
     border-radius: 50px;
@@ -335,7 +338,24 @@ li{
         grid-template-rows: auto 65% auto;
         grid-template-columns: none;
     }
+    .contentpri2{
+        display: grid;
+        grid-template-rows: 100% auto;
+        grid-template-columns: none;
+    }
+  
+    .accordion{
+        width: 100%;
+    }
 
+    .panel p{
+       margin-left: 0%;
+       font-size: 18px;
+    }
+
+    .panel img{
+        width: 50%;
+    }
     .imgavatar{
         max-width: 50%;
     }
@@ -383,7 +403,13 @@ li{
     .wrapper{
         display: none;
     }
-
+    .panel h1{
+        font-size: 20px;
+    }
+    .panel h2{
+        font-size: 18px;
+    }
+   
 
 }
 @media (max-width:1600px){
@@ -399,10 +425,17 @@ li{
         font-size: 23px;
     }
 
+
     #redes{
         font-size: 35px;
        
         }
    
-
+    .tabordion section article h1{
+            font-size: 23px;
+        }
+       
+   .tabordion section article {
+       min-width: 600px;
+   }
 } 
