@@ -1,0 +1,408 @@
+@font-face {
+    font-family: "rNormal";
+    src:url("font/Rajdhani-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "rBold";
+    src:url("font/Rajdhani-Bold.ttf") format("truetype");
+}
+*{ margin:0; padding:0}
+html{
+    min-height: 100%;
+    position: relative;
+}
+body {
+    background:  #F4ECF7;
+    font-family: rNormal;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+/*menu cel*/
+
+.boxredes2{
+    display: none;
+}
+
+
+.imgavatar{
+    max-width:100%;
+  }
+
+.contenthead{
+    width: 90%;
+    height: 30%;
+    margin-left:5%;
+    margin-right: 5%;
+    border-bottom-color: #ABB2B9;
+    border-bottom-style: solid;
+}
+
+#contentmain{
+    width: 90%;
+    height: 40%;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 2%;
+  
+}
+#contentskillinfo{
+    width: 7%;
+    height: 80%;
+   /* background: blue;*/
+    margin: 0px 3%;
+    display: inline-block;
+    
+  
+}
+
+#contenttext{
+    width: 80%;
+    height: 100%;
+ /*   background: aquamarine;*/
+    margin: 0px 2%;
+    display: inline-block;
+}
+
+#navinfe{
+    width: 100%;
+    height: 15%;
+    left:0px;  
+  /*  background: yellow; */
+  background:#E8DAEF;
+    position: absolute;
+    bottom: 0;
+
+   
+}
+
+
+#imgbox{
+    width: 19.7%;
+    height: 100%;
+ /*   background: red; */
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.imgmenu{
+  height: 100%;
+    filter: grayscale(80%);
+}
+
+#imgbox:hover{
+    background: #ABB2B9;
+
+}
+
+
+/*main*/
+.contentpri{
+    display: grid;
+    grid-template-columns: 20% auto;
+  
+}
+.boxavatar{
+    text-align: center;
+    margin: auto;
+    animation: photo 1.5s ease 0s normal;
+}
+.boxskill{
+    text-align: left;
+    margin: 2% 0px;
+    
+}
+.boxinfo{
+    text-align: left;
+    padding-left: 5%;
+}
+
+.boxinfo h2{
+    font-family: rNormal;
+    font-size: 25px;
+    color: #566573;
+    margin: 2% 0px;
+}
+
+.boxinfo p{
+    font-family: rNormal;
+    font-size: 23px;
+    color: #566573;
+}
+
+.boxinfo h1{
+    font-family: rBold;
+    font-size: 45px;
+    margin-bottom: 0px;
+    color: #566573;
+   
+}
+
+.boxinfo h3{
+    font-family: rBold;
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: #8a7196;
+}
+
+/*Probando con grid*/
+.wrapper{
+    display: grid;
+    width: 100%;
+    background:#E8DAEF;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    
+    grid-template-columns: repeat(5,1fr);
+    
+}
+
+.caja{
+     text-align: center;
+     margin: auto;
+     
+}
+
+.imgmenuu{
+    max-width: 25%;
+    height: auto;
+}
+
+.caja:hover{
+    background: #ABB2B9;
+}
+#navigation{
+    display: none;
+}
+/*encabezado */
+
+.content{
+    display: grid;
+    grid-template-columns: 10% auto 30%;
+}
+
+.boxphoto{
+    text-align: center;
+}
+.boxdown{
+    text-align: left;
+    margin: auto 0px;
+}
+.boxredes{
+    text-align: center;
+   margin: auto;
+}
+.boxmenu{
+    display: none;
+}
+
+/*img perfil */
+.imgredonda{
+    border-radius: 50px;
+    max-width: 40%;
+    height: auto;
+}
+
+.imgdown{
+    max-width: 30%;
+    height: auto;
+}
+
+.imgdown:hover{
+    filter: grayscale(80%);
+}
+
+
+
+/*iconos*/
+#redes{
+font-size: 50px;
+color: #8a7196;
+}
+
+#redes:hover{
+    filter: grayscale(80%);
+    animation:nudge 2s ease-in ;
+}
+
+
+/*Barra Progreso*/
+.progress-container, .htmlc, .soportec{
+    background: lightgray;    
+    width: 80%;
+    overflow-x: hidden;
+    margin: 1% 0px;
+    animation: moveInRight 3s ease-in 1s ;
+   }
+
+  progress{
+   width:100%;   
+   height: 15px;   
+  }
+
+  progress[value] {
+   vertical-align: middle;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+   border: none;
+   background-color:lightgray;
+
+   }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: lightgray;
+    
+  }
+  progress::-webkit-progress-value {
+    background-color: #E59866;
+     }
+ 
+ .htmlc  progress::-webkit-progress-value {
+        background-color: #45B39D;
+         }
+ .soportec  progress::-webkit-progress-value {
+            background-color: #D4AC0D;
+             }
+
+ progress::-moz-progress-bar{
+    background-color: #E59866;
+ }
+
+ .htmlc progress::-moz-progress-bar{
+    background-color: #45B39D;
+ }
+ .soportec progress::-moz-progress-bar{
+    background-color: #D4AC0D;
+ }
+
+
+/*Listas*/
+li{
+    font-family: rNormal;
+    color: #566573;
+    font-size: 23px;
+    list-style: none;
+    padding: 10px;
+}
+
+
+/*animacion*/
+
+@keyframes moveInRight {
+    0%{
+    text-indent: -100%;
+    }
+
+    100% {
+     text-indent: 0;
+    }
+}
+
+@keyframes nudge {
+    0% {transform: translateY(0);}    
+    50% {transform: translateY(-20px);}
+    80% {transform: translateY(-60px);}
+  }
+
+@keyframes photo{
+    0%{transform: translateX(-500px);}
+    40%{transform: translateX(60px);}
+    50% {transform: translateX(40px); }
+    100% {transform: translateX(0px);}
+}
+
+
+@media (max-width:800px){
+    #contentmain {
+        
+        margin-left:0px;
+        margin-right:0px; 
+        width: 100%;
+        
+    }
+    .contenthead {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+            }
+    .content{
+        grid-template-columns: 70% auto;
+    }
+    .contentpri{
+        grid-template-rows: auto 65% auto;
+        grid-template-columns: none;
+    }
+
+    .imgavatar{
+        max-width: 50%;
+    }
+    ul {
+        padding-left: 0px;
+    }
+    #navigation{
+        display: block;
+        
+    }
+    .boxredes2{
+    display: block;
+    text-align: center;
+    
+    }
+    .boxdown{
+        display: none;
+    }
+    .boxskill{
+        display: none;
+    }
+
+    .imgdown{
+        max-width: 60%;
+    }
+    .boxinfo{
+        text-align: center;
+        padding-left: 0%;
+    }
+    .boxinfo h1{
+        font-size: 30px;
+    }
+    .boxinfo h2{
+        font-size: 20px;
+    }
+    .boxinfo p{
+        font-size: 18px;
+    }
+    .boxphoto {
+        display: none;
+    }
+    .boxredes {
+        display: none;
+    }
+    .wrapper{
+        display: none;
+    }
+
+
+}
+@media (max-width:1600px){
+
+    .boxinfo h1 {
+        font-size: 30px;
+    }
+
+    .boxinfo h2 {
+        font-size: 23px;
+    }
+    .boxinfo h3{
+        font-size: 23px;
+    }
+
+    #redes{
+        font-size: 35px;
+       
+        }
+   
+
+} 
